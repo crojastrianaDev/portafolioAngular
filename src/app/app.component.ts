@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { InfoPaginaService } from './services/info-pagina.service';
+import { ProductosService } from './services/productos.service';
 
 
 @Component({
@@ -10,7 +11,8 @@ import { InfoPaginaService } from './services/info-pagina.service';
 export class AppComponent {
   title = 'portafolio';
   //podemos inyectar los servicios
-  constructor( public _infoPagina: InfoPaginaService ){
+  constructor( public _infoPagina: InfoPaginaService,
+     public productosService: ProductosService){
 
   }
 }
